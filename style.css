@@ -1,0 +1,36 @@
+html{
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 100%;
+}
+
+.header_text{
+    margin-top: 27px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 400%;
+}
+
+.button{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#yesButton{
+    margin-right: 150px;
+}
+
+#noButton{
+    transition: 0.5s;
+    margin-left: 150px;
+}
