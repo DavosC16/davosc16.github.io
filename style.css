@@ -3,9 +3,6 @@ html{
     text-align: center;
     justify-content: space-evenly;
     font-size: 100%;
-    /*background-color: #fef2f2;
-    background-color: #f0fdfb;
-    background-color: #fff1f2;*/
 }
 
 .header_text{
@@ -27,22 +24,14 @@ html{
     padding-bottom: 20px;
     padding-top: 20px;
     cursor: pointer;
-    /*background-color: #ddd6fe;
-    border-color: #c4b5fd;
-    background-color: #9af5e8;
-    border-color: #5fe9d9;
-    background-color: #fecaca;
-    border-color: #fca5a5;*/
+    background-color: #ffe4e6;
+    border-color: #fecdd3;
 }
 
 .button:hover{
-    /*color:white;
-    /*background-color: #7c3aed;
-    border-color: #6d28d9;
-    background-color: #0e958f;
-    border-color: #107571;
-    background-color: #f87171;
-    border-color: #ef4444;*/
+    color:white;
+    background-color: #fb7185;
+    border-color: #f43f5e;
 }
 
 #yesButton{
