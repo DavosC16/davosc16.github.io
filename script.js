@@ -22,3 +22,7 @@ function noClick(){
 function yesClick(){
     window.location.href="yes.html";
 }
+
+function yesPage(){
+    window.location.href="nevermind.html";
+}
