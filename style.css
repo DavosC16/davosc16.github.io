@@ -10,6 +10,7 @@ html{
     padding-left: 50px;
     padding-right: 50px;
     font-size: 400%;
+    color: black;
 }
 
 .button{
@@ -26,6 +27,7 @@ html{
     cursor: pointer;
     background-color: #ffe4e6;
     border-color: #fecdd3;
+    color: black;
 }
 
 .button:hover{
