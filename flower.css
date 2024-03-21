@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(21,21,21);
+    font-size: 62.5%;
+}
+
+.flower{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 100rem;
+}
+
+.petals{
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    transform: rotateX(30deg);
+}
+
+.petal{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    transform-origin: bottom right;
+}
+
+.petal::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#fff,#ff0);
+    border-radius: 50% 50% 0 50%;
+    transform: skew(23deg,23deg);
+    box-shadow: 0.3rem 0.3rem 0.3rem #ddd;
+    transform-origin: bottom right;
+}
+
+@keyframes bloomingPetal2 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes bloomingPetal3 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(60deg);
+    }
+}
+
+@keyframes bloomingPetal4 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes bloomingPetal5 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(120deg);
+    }
+}
+
+@keyframes bloomingPetal6 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(150deg);
+    }
+}
+
+@keyframes bloomingPetal7 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes bloomingPetal8 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(210deg);
+    }
+}
+
+@keyframes bloomingPetal9 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(240deg);
+    }
+}
+
+@keyframes bloomingPetal10 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(270deg);
+    }
+}
+
+@keyframes bloomingPetal11 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(300deg);
+    }
+}
+
+@keyframes bloomingPetal12 {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(330deg);
+    }
+}
+
+.petal:nth-child(1){
+    transform: rotateZ(0);
+}
+
+.petal:nth-child(2){
+    animation-name: bloomingPetal2;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(3){
+    animation-name: bloomingPetal3;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(4){
+    animation-name: bloomingPetal4;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(5){
+    animation-name: bloomingPetal5;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(6){
+    animation-name: bloomingPetal6;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(7){
+    animation-name: bloomingPetal7;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(8){
+    animation-name: bloomingPetal8;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(9){
+    animation-name: bloomingPetal9;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(10){
+    animation-name: bloomingPetal10;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(11){
+    animation-name: bloomingPetal11;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.petal:nth-child(12){
+    animation-name: bloomingPetal12;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.circle{
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:0.1rem solid #ddd;
+    border-radius: 50%;
+}
+
+.stem{
+    position: absolute;
+    width: 2rem;
+    height: 60rem;
+    background-image: linear-gradient(
+        to right,
+        rgb(149,235,92),
+        green,
+        rgb(149,235,92)
+    );
+    transform: translateY(50%) rotateZ(7deg);
+    transform-origin: top;
+    z-index: -1;
+}
