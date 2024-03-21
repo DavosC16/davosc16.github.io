@@ -96,7 +96,7 @@ html{
         transform: rotateZ(0);
     }
     to{
-        transform: rotateZ(180deg);
+        transform: rotateZ(0.5turn);
     }
 }
 
