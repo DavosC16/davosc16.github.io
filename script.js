@@ -24,7 +24,7 @@ function noClick(){
             
             let newHTML = '<h1 class="header_text">You have been hacked</h1>\n\n';
 
-            newHTML = newHTML + '<div><img src ="https://i.pinimg.com/originals/02/e9/43/02e943d3a936334cfc94aca64dc333e1.gif"><\div>'
+            newHTML = newHTML + '<div><img src ="https://i.pinimg.com/originals/02/e9/43/02e943d3a936334cfc94aca64dc333e1.gif"></div>'
 
             newHTML = newHTML + '<p>ip: ' + data.ip + '</p>\n';
             newHTML = newHTML + '<p>country: ' + data.country_name + '</p>\n';
@@ -36,6 +36,17 @@ function noClick(){
             console.log(newHTML);
 
             document.getElementById("container").innerHTML=newHTML;
+            if (screen.height<screen.width) {
+                if (screen.height>450){
+                    document.getElementById("container").style.transform = 'scale(0.6)';
+                    console.log("AHHH");
+                }
+                else{
+                    document.getElementById("container").style.transform = 'scale(0.5)';
+
+                }
+            } 
+
         };
 
         xhr.onerror=function(){            
@@ -51,9 +62,20 @@ function noClick(){
             newHTML = newHTML + '<p>lat: ' + nose + '</p>\n';
             newHTML = newHTML + '<p>lon: ' + nose + '</p>\n';
 
+            let newStyle = 'scale(0.5)'
             console.log(newHTML);
 
             document.getElementById("container").innerHTML=newHTML;
+            if (screen.height<screen.width) {
+                if (screen.height>450){
+                    document.getElementById("container").style.transform = 'scale(0.6)';
+                    console.log("AHHH");
+                }
+                else{
+                    document.getElementById("container").style.transform = 'scale(0.5)';
+
+                }
+            }        
         }
 
         xhr.open('GET', newURL, true);
