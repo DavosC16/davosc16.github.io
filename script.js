@@ -1,22 +1,29 @@
-var height = window.innerHeight;
-var width = window.innerWidth;
-console.log(height, width);
+/*document.addEventListener('mousemove', function(event) {
+    console.log('Mouse X:', event.clientX, 'Mouse Y:', event.clientY);
+});*/
 
-function noClick(){ 
-    var x;
-    var y;
+const height = window.innerHeight;
+const width = window.innerWidth;
+
+function noClick(){
+
+    console.log(width);
+    let x;
+    let y;
+    
+    console.log(height);
+    console.log(width);
+    do{
+        x = width * 0.8 * Math.random();
+    }while(x>(width-160))
 
     do{
-        x = this.width * 0.8 * Math.random();
-    }while(x>this.width)
-
-    do{
-        y = this.height * 0.8 * Math.random();
-    }while(y>this.height)
+        y = height * 0.8 * Math.random();
+    }while(y>(height-40))
 
     document.getElementById("noButton").style.position = "absolute";
     document.getElementById("noButton").style.left = x + "px";
-    document.getElementById("noButton").style.top= y + "px";
+    document.getElementById("noButton").style.top = y + "px";
 }
 
 function yesClick(){

@@ -1,19 +1,19 @@
+
 html{
     font-family: 'Fraunces', serif;
     text-align: center;
-    justify-content: space-evenly;
-    font-size: 100%;
 }
+
 
 .header_text{
     margin-top: 27px;
     padding-left: 50px;
     padding-right: 50px;
     font-size: 400%;
-    color: black;
+    color: #333333;
 }
 
-.button{
+button{
     margin-top: 15px;
     text-align: center;
     font-family: 'Fraunces', serif;
@@ -27,7 +27,7 @@ html{
     cursor: pointer;
     background-color: #ffe4e6;
     border-color: #fecdd3;
-    color: black;
+    color: #333333;
 }
 
 .button:hover{
@@ -36,11 +36,41 @@ html{
     border-color: #f43f5e;
 }
 
-#yesButton{
-    margin-right: 150px;
-}
+/*#yesButton{
+    position: relative;
+}*/
 
 #noButton{
     transition: 0.5s;
-    margin-left: 150px;
+} 
+
+#buttons{
+    max-width: 100vw;
+}
+
+#container{
+    width: 100%;
+    max-width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+p{
+    font-size: 150%;
+}
+
+@media (min-device-width: 600px)  {
+    #container{
+        height: 90vh;
+    }
+}
+
+@media (max-device-height: 450px) {
+    #container{
+        transform: scale(0.5);
+    }
 }
