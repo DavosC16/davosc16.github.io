@@ -13,7 +13,7 @@ function noClick(){
         console.log(ip.ip);
         
         //let newURL = "https://ipapi.co/" + ip.ip + "/json/";
-        let newURL="http://ip-api.com/json/"+ip.ip;
+        let newURL="https://ip-api.com/json/"+ip.ip;
         console.log(newURL);
 
         var xhr = new XMLHttpRequest();
