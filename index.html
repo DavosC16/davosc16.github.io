@@ -10,15 +10,18 @@
 
     <body>
         <!--Que haces leyendo esto?-->
-        <h1 class="header_text">Do you wanna go out with me?</h1>
+        <div id="container">
+            <h1 class="header_text">Do you wanna go out with me?</h1>
 
-        <div>
-            <img src="https://media.giphy.com/media/d7U9wE4REtinUIDeQ7/giphy.gif">
+            <div>
+                <img src="https://media.giphy.com/media/d7U9wE4REtinUIDeQ7/giphy.gif">
+            </div>
+            
+            <div id="buttons">
+                <button class="button" onclick="yesClick()" id="yesButton">Yes</button>
+                <button class="button" onclick="noClick()" id="noButton">No</button>
+            </div>
         </div>
-
-        <div class="buttons">
-            <button class="button" onclick="yesClick()" id="yesButton">Yes</button>
-            <button class="button" onmouseover="noClick()" onclick="noClick()" id="noButton">No</button>
-        </div>
+        
     </body>
 </html>

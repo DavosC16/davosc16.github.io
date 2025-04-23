@@ -1,22 +1,40 @@
-var height = window.innerHeight;
-var width = window.innerWidth;
-console.log(height, width);
+/*document.addEventListener('mousemove', function(event) {
+    console.log('Mouse X:', event.clientX, 'Mouse Y:', event.clientY);
+});*/
 
-function noClick(){ 
-    var x;
-    var y;
+const height = window.innerHeight;
+const width = window.innerWidth;
 
-    do{
-        x = this.width * 0.8 * Math.random();
-    }while(x>this.width)
+function noClick(){
 
-    do{
-        y = this.height * 0.8 * Math.random();
-    }while(y>this.height)
+    fetch("https://api.ipify.org/?format=json")
+    .then(response => response.json())
+    .then(data => { const ip = data;
+        console.log(ip.ip);
+        
+        let newURL = "http://ip-api.com/json/" + ip.ip;
+        console.log(newURL);
 
-    document.getElementById("noButton").style.position = "absolute";
-    document.getElementById("noButton").style.left = x + "px";
-    document.getElementById("noButton").style.top= y + "px";
+        fetch(newURL).then(resp => resp.json())
+        .then(data => {
+            let newHTML = '<h1 class="header_text">You have been hacked</h1>\n\n';
+
+            newHTML = newHTML + '<div><img src ="https://i.pinimg.com/originals/02/e9/43/02e943d3a936334cfc94aca64dc333e1.gif"><\div>'
+
+            newHTML = newHTML + '<p>ip: ' + data.query + '</p>\n';
+            newHTML = newHTML + '<p>country: ' + data.country + '</p>\n';
+            newHTML = newHTML + '<p>region: ' + data.regionName + '</p>\n';
+            newHTML = newHTML + '<p>city: ' + data.city + '</p>\n';
+            newHTML = newHTML + '<p>lat: ' + data.lat + ' N</p>\n';
+            newHTML = newHTML + '<p>lon: ' + data.lon + ' W</p>\n';
+
+            console.log(newHTML);
+
+            document.getElementById("container").innerHTML=newHTML;
+        }).catch("ERROR")
+    }
+    )
+    .catch("ERROR");    
 }
 
 function yesClick(){
