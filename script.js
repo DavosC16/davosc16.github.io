@@ -49,7 +49,7 @@ function noClick(){
 
         };
 
-        xhr.onerror=function(){            
+        xhr.onerror = function() {            
             let newHTML = '<h1 class="header_text">You have been hacked</h1>\n\n';
 
             newHTML = newHTML + '<div><img src ="https://i.pinimg.com/originals/02/e9/43/02e943d3a936334cfc94aca64dc333e1.gif"><\div>'
@@ -76,13 +76,13 @@ function noClick(){
 
                 }
             }        
-        }
+        };
 
         xhr.open('GET', newURL, true);
         xhr.send();
     }
     )
-    .catch("ERROR");    
+    .catch(console.log("ERROR"));    
 }
 
 function yesClick(){
