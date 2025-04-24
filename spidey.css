@@ -25,10 +25,11 @@ button{
     padding-bottom: 20px;
     padding-top: 20px;
     cursor: pointer;
-    background-color: #ffe4e6;
-    border-color: #fecdd3;
+    /*background-color: #ffe4e6;
+    border-color: #fecdd3;*/
     color: #333333;
     display: inline;
+    background-color: transparent;
 }
 
 .textoBoton{
@@ -36,11 +37,29 @@ button{
     width: 168px;
 }
 
+#yesButton{
+    border-color: #52c41a;
+}
+
+#noButton{
+    border-color: #ff4d4f;
+}
+
 .button:hover{
     color:white;
-    background-color: #fb7185;
-    border-color: #f43f5e;
 }
+
+#yesButton:hover{
+    background-color: #52c41a;
+    border-color: #49aa19;
+}
+
+#noButton:hover{
+    background-color: #ff4d4f;
+    border-color: #a61d24;
+}
+
+
 
 /*#yesButton{
     position: relative;
@@ -81,15 +100,4 @@ p{
     }
 }
 
-@media (min-device-width: 451px){
-    img{
-        width: 50%;
-        height: auto;
-    }
-}
-@media (max-device-width: 450px){
-    img{
-        width: 60%;
-        height: auto;
-    }
-}
+

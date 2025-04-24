@@ -81,7 +81,7 @@ function noValentineClick(){
 
         newButton = '<button class="button" onclick="yesValentineClick()" id="'+buttonId+'">Yes</button>';
 
-        console.log(newButton)
+        console.log(newButton);
 
         document.getElementById("newButtons").innerHTML+=newButton;
 
