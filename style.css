@@ -63,7 +63,7 @@ p{
     font-size: 150%;
 }
 
-@media (min-device-width: 600px)  {
+@media (min-device-width: 451px)  {
     #container{
         height: 90vh;
     }
